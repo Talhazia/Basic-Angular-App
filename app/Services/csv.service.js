@@ -2,14 +2,14 @@
 
 var csvService = angular.module('csv.service', []);
 
-csvService.factory('Items', ['$http', '$q', function($http, $q){
-  var Url   = "csv/user-data.csv";
-  var deferred = $q.defer();
-  var dataList = [];
-  $http.get(Url).then(function(response){
-     if(response) {
-     	var CSVData = response.data;
-     	var lines, lineNumber, data, length;
+csvService.factory('Items', ['$http', '$q', function($http, $q) {
+    var Url = "csv/user-data.csv";
+    var deferred = $q.defer();
+    var dataList = [];
+    $http.get(Url).then(function(response) {
+        if (response) {
+            var CSVData = response.data;
+            var lines, lineNumber, data, length;
             lines = CSVData.split('\n');
             lineNumber = 0;
             for (var i = 1; i < lines.length - 1; i++) {
@@ -31,11 +31,11 @@ csvService.factory('Items', ['$http', '$q', function($http, $q){
 
             }
             deferred.resolve(dataList);
-     }
-  }, function(error) {
-  	if(error) {
-  		deferred.reject(error);
-  	}
-  });
-  return deferred.promise;
+        }
+    }, function(error) {
+        if (error) {
+            deferred.reject(error);
+        }
+    });
+    return deferred.promise;
 }]);

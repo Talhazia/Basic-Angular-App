@@ -1,9 +1,11 @@
-# `angular-seed` — 
-Angular seed cloned, added angular-ui-router, ngMaterial, modified directory structure 
+# `Basic Angular App` — 
 
-
-**Before starting Protractor, open a separate terminal window and run:**
-
+- Clone repo and run
+```
+npm install
+``
+then run
 ```
 npm start
 ``
+

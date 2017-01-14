@@ -1,28 +1,27 @@
-<div class="dataDetailName" flex="40" flex-offset="30" layout="row" layout-align="center center">
-	<h4>Details for {{ dataDetail.firstname }} {{ dataDetail.lastname }}</h4>
+<div class="dataDetailName animated slideInUp" flex="40" flex-offset="30" layout="row" layout-align="center center">
+    <h4>Details for {{ dataDetail.firstname }} {{ dataDetail.lastname }}</h4>
 </div>
-<div class="details-frame" md-whiteframe="{{height}}" flex="100" flex-gt-sm="50" layout="column" layout-align="space-around center"
-       ng-init="height = 3" ng-mouseenter="height = 6" ng-mouseleave="height = 3" layout-padding>
-       <div layout="row" layout-align="space-between center" flex>
-	      <md-input-container class="md-block" flex-gt-xs flex="30">
-	        <label>First Name </label>
-	        <input ng-model="dataDetail.firstname" ng-if="!isEdit">
-	      </md-input-container>
-	      <md-input-container class="md-block" flex-gt-xs flex="30">
-	        <label>Last Name </label>
-	        <input ng-model="dataDetail.lastname">
-	      </md-input-container> 
-	      <md-input-container class="md-block" flex-gt-xs flex="30">
-	        <label>Email </label>
-	        <input ng-model="dataDetail.email">
-	      </md-input-container> 
-       </div>
-       <div class="field-message" layout="row" layout-align="center center" flex>
-       	<h4>Click on the fields to edit</h4>
+<div class="details-frame animated fadeIn" md-whiteframe="{{height}}" flex="100" flex-gt-sm="50" layout="column" layout-align="space-around center" ng-init="height = 3" ng-mouseenter="height = 6" ng-mouseleave="height = 3" layout-padding>
+    <div layout="row" layout-align="space-between center" flex>
+        <md-input-container class="md-block" flex-gt-xs flex="30">
+            <label>First Name </label>
+            <input ng-model="dataDetail.firstname" ng-if="!isEdit">
+        </md-input-container>
+        <md-input-container class="md-block" flex-gt-xs flex="30">
+            <label>Last Name </label>
+            <input ng-model="dataDetail.lastname">
+        </md-input-container>
+        <md-input-container class="md-block" flex-gt-xs flex="30">
+            <label>Email </label>
+            <input ng-model="dataDetail.email">
+        </md-input-container>
+    </div>
+    <div class="field-message" layout="row" layout-align="center center" flex>
+        <h4>Click on the fields to edit</h4>
 
-       </div>
+    </div>
 
 </div>
 <div class="view-list animated slideInDown" layout="row" flex="20" flex-offset="40">
-	<md-button style="background-color: #01579B !important; color: #F6F6F6 !important" class="md-raised" ui-sref="datalist" flex>Back to List</md-button>
-</div>	
+    <md-button style="background-color: #01579B !important; color: #F6F6F6 !important" class="md-raised" ui-sref="datalist" flex>Back to List</md-button>
+</div>
