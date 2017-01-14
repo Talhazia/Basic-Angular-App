@@ -1,0 +1,49 @@
+/* app css stylesheet */
+
+html, body{
+	height: 100%;
+	width: 100%;
+}
+
+.header{
+	background-color: #3F51B5;
+	text-align: center;
+	color: #f6f6f6;
+	height: 50px;
+	text-transform: uppercase;
+}
+
+.auth-frame{
+	background-color: #ffffff;
+    margin-top: 225px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo img{
+	max-height: 200px;
+	max-width: 200px;
+}
+
+.intro h3{
+	color: #795548;
+  	font-family: "-apple-system", "Helvetica Neue", "Roboto", "Segoe UI", sans-serif;
+  	font-weight: 500;
+  	line-height: 10px;
+}
+
+.view-list{
+	margin-top: 125px;
+}
+
+.sort{
+	margin-top: 25px;
+}	
+
+.list h5{
+	font-style: italic;
+	font-weight: 600;
+	font-family: "-apple-system", "Helvetica Neue", "Roboto", "Segoe UI", sans-serif;
+	letter-spacing: 0.05em;
+	color: #009688;
+}
