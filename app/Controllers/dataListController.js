@@ -6,6 +6,7 @@ angular.module('myApp.controllers')
 	console.log("data list details controller loeaded");
 
 	$scope.dataDetail = {};
+	$scope.isEdit = false;
 	console.log($rootScope.dataList);
 
   	if($stateParams.id && $rootScope.dataList) {
@@ -15,4 +16,5 @@ angular.module('myApp.controllers')
                 		}
                 	})
                 }
+
 }]);

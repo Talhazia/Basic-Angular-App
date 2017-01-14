@@ -3,6 +3,7 @@
 html, body{
 	height: 100%;
 	width: 100%;
+	font-family: "-apple-system", "Helvetica Neue", "Roboto", "Segoe UI", sans-serif !important;
 }
 
 .header{
@@ -27,7 +28,6 @@ html, body{
 
 .intro h3{
 	color: #795548;
-  	font-family: "-apple-system", "Helvetica Neue", "Roboto", "Segoe UI", sans-serif;
   	font-weight: 500;
   	line-height: 10px;
 }
@@ -43,7 +43,6 @@ html, body{
 .list h5{
 	font-style: italic;
 	font-weight: 600;
-	font-family: "-apple-system", "Helvetica Neue", "Roboto", "Segoe UI", sans-serif;
 	letter-spacing: 0.05em;
 	color: #009688;
 }
@@ -65,4 +64,27 @@ html, body{
 .details-frame{
 	margin-right: auto;
 	margin-left: auto;
+	margin-top: 50px;
+}
+
+.dataDetailName {
+	margin-top: 100px;
+}
+
+.details-frame md-input-container label{
+	color: #546E7A !important;
+	font-weight: 800 !important;
+	letter-spacing: 0.04em;
+}
+
+.details-frame md-input-container input{
+	color: #FF5722 !important;
+	letter-spacing: 0.04em;
+}
+
+.field-message{
+	color: #795548 !important;
+	letter-spacing: 0.04em;
+	font-style: italic;
+	font-weight: 300;
 }
