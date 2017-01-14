@@ -11,7 +11,7 @@
         <md-list-item ng-repeat="Items in dataList track by $index" class="noright row-highlight" ng-init="sort()">
             <img alt="{{ Items.firstname }}" ng-src="{{ Items.avatar }}" class="md-avatar" />
             <p>{{ Items.firstname }} {{ Items.lastname }}</p>
-            <md-button class="md-raised md-primary details-button" ui-sref="details({ id: Items.email })">DETIALS</md-button>
+            <md-button class="md-raised md-primary details-button" ui-sref="details({ id: Items.email })">DETAILS</md-button>
             <md-button class="md-raised md-warn" ng-click="delete(item)">DELETE</md-button>
             <ui-view></ui-view>
         </md-list-item>
