@@ -1,7 +1,12 @@
 # `Basic Angular App` — 
 
-- Clone repo and run
+
+### Clone repo and run
 ```
-npm install then npm start
-``
+npm install 
+
+### then run
+```
+npm start
+
 
