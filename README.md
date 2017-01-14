@@ -2,10 +2,6 @@
 
 - Clone repo and run
 ```
-npm install
-``
-then run
-```
-npm start
+npm install then npm start
 ``
 
