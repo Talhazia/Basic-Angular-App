@@ -47,3 +47,22 @@ html, body{
 	letter-spacing: 0.05em;
 	color: #009688;
 }
+
+.row-highlight {
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+}
+
+.row-highlight:hover {
+	background: rgba(0, 0, 0, 0.1);
+}
+
+.details-button{
+	background-color: #009688 !important;
+}
+
+.details-frame{
+	margin-right: auto;
+	margin-left: auto;
+}

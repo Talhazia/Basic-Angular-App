@@ -1,5 +1,5 @@
 <div class="sort animated slideInRight" flex="10" flex-offset="80" layout="column" layout-align="space-around center">
-    <md-button ng-click="reverse($index)" class="md-fab md-primary" aria-label="sort">
+    <md-button ng-click="sort()" class="md-fab md-primary" aria-label="sort">
       <md-icon md-svg-src="img/sort.svg"></md-icon>
     </md-button>
     <p>SORT</p>
@@ -8,11 +8,12 @@
 <md-content class="list animated zoomIn" layout="column" flex="70" flex-offset="15">
 	<md-list>
 	  <md-subheader class="md-no-sticky">CSV Data List</md-subheader>
-	  <md-list-item ng-repeat = "Items in dataList track by $index" ng-click="goToPerson(person.name, $event)" class="noright">
+	  <md-list-item ng-repeat = "Items in dataList track by $index" class="noright row-highlight" ng-init="sort()">
 	    <img alt="{{ Items.firstname }}" ng-src="{{ Items.avatar }}" class="md-avatar" />
 	    <p>{{ Items.firstname }} {{ Items.lastname }}</p>
-	    <h5>click for details</h5>
+	    <md-button class="md-raised md-primary details-button" ui-sref="details({ id: Items.email })" >DETALS</md-button>
 	    <md-button class="md-raised md-warn" ng-click="delete(item)">DELETE</md-button>
+	    <ui-view></ui-view>
 	  </md-list-item>
 	</md-list>
 </md-content>

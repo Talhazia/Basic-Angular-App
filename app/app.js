@@ -7,8 +7,17 @@ angular.module('myApp', [
   'ui.router',
   'ngMaterial',
   'csv.service'
-]).
-config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
+])
+.run(function($rootScope, Items) {
+	$rootScope.dataList = [];
+
+	Items.then(function(result) {  
+                $rootScope.dataList = result; 
+            }, function(error) { 
+                console.log(error) 
+            });
+})
+.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
 
 	$stateProvider
     .state('home', {
@@ -16,10 +25,15 @@ config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRou
       templateUrl: 'templates/home.html',
       controller: 'HomeController'
     })
-    .state('view2', {
-      url: '/view2',
-      templateUrl: 'templates/view2.html',
-      controller: 'View2Controller'
+    .state('datalist', {
+      url: '/datalist',
+      templateUrl: 'templates/datalist.html',
+      controller: 'dataListController'
+    })
+    .state('details', {
+      url: '/details/:id',
+      templateUrl: 'templates/datalistdetails.html',
+      controller: 'dataListDetailsController'
     });
 
     $urlRouterProvider.otherwise('/home');
