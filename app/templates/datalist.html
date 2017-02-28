@@ -12,7 +12,7 @@
             <img alt="{{ Items.firstname }}" ng-src="{{ Items.avatar }}" class="md-avatar" flex="5" flex-gt-sm="10" />
             <p flex="40" flex-gt-sm="70" >{{ Items.firstname }} {{ Items.lastname }}</p>
             <md-button class="md-raised md-primary details-button" ui-sref="details({ id: Items.email })" flex="5" flex-gt-sm="10">DETAILS</md-button>
-            <md-button class="md-raised md-warn" ng-click="delete(item)" flex="5" flex-gt-sm="10">DELETE</md-button>
+            <md-button class="md-raised md-warn" ng-click="delete($index)" flex="5" flex-gt-sm="10">DELETE</md-button>
         </md-list-item>
     </md-list>
 </md-content>

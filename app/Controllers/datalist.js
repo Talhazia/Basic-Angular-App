@@ -22,8 +22,8 @@ angular.module('myApp.controllers')
             }
         }
 
-        $scope.delete = function($index) {
-            $rootScope.dataList.splice($index, 1);
+        $scope.delete = function(index) {
+            $rootScope.dataList.splice(index, 1);
             $scope.isSortASC = true;
         }
     }]);
